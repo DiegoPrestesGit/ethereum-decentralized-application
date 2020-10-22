@@ -1,7 +1,7 @@
 {
-  "name": "eth-marketplace",
+  "name": "the-cornerstone",
   "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
+  "description": "Doing swap between my own cryptocurrency and Ethereum currency",
   "author": "gregory@dappuniversity.com",
   "dependencies": {
     "babel-polyfill": "6.26.0",
