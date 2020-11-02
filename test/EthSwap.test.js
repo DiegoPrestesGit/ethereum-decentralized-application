@@ -1,3 +1,5 @@
+const { assert } = require('chai')
+
 const Token = artifacts.require('Token')
 const EthSwap = artifacts.require('EthSwap')
 
@@ -41,9 +43,22 @@ contract('EthSwap', ([deployer, investor]) => {
   })
 
   describe('Token transactions', async() => {
-    it('Allows user to instantly purchase tokens from ethSwap for a fixed price', async() => {
-      await ethSwap.buyTokens({from: investor, value: tokens('1')})
+    let result
 
+    before(async() => {
+      result = await ethSwap.buyTokens({from: investor, value: tokens('1')})
+    })
+
+    it('Allows user to instantly purchase tokens from ethSwap for a fixed price', async() => {
+      const investorBalance = await token.balanceOf(investor)
+      assert.equal(investorBalance.toString(), tokens('100'))
+
+      const ethSwapBalance = await token.balanceOf(ethSwap.address)
+
+      assert.equal(ethSwapBalance.toString(), tokens('999900'))
+
+      const newEthSwapBalance = await web3.eth.getBalance(ethSwap.address)
+      assert.equal(newEthSwapBalance.toString(), tokens('1'))
     })
   })
 })
