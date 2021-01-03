@@ -1,14 +1,8 @@
 {
-  "name": "the-cornerstone",
+  "name": "eth-marketplace",
   "version": "0.1.0",
-  "description": "Doing swap between my own cryptocurrency and Ethereum currency",
+  "description": "An Ethereum Marketplace",
   "author": "gregory@dappuniversity.com",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
-    "chai-bignumber": "3.0.0",
-    "mocha": "^8.2.0"
-  },
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
@@ -17,8 +11,9 @@
     "babel-preset-stage-3": "6.24.1",
     "babel-register": "6.26.0",
     "bootstrap": "4.3.1",
-    "ganache-cli": "^6.12.1",
-    "identicon.js": "^2.3.3",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
     "react": "16.8.4",
     "react-bootstrap": "1.0.0-beta.5",
     "react-dom": "16.8.4",
