@@ -68,12 +68,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Token\",\"name\":\"_token\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract Token\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/diego/source/ethereum-dapp/src/contracts/EthSwap.sol\":\"EthSwap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/diego/source/ethereum-dapp/src/contracts/EthSwap.sol\":{\"keccak256\":\"0x797371865f230d3cc5f97f52e9e767f216f74d800e7d582e134daabc889289f4\",\"urls\":[\"bzz-raw://7ea65b65b13c72686d252ae96117c3827219d9c9ed7578d543ab87861bc77768\",\"dweb:/ipfs/QmXeNTEu7HzSXfaCTs7AhZiafE3RaNKpjqgC4SrDBM5B5t\"]},\"/C/Users/diego/source/ethereum-dapp/src/contracts/Token.sol\":{\"keccak256\":\"0xc502e22d8e422affe3f01ca4178d2703a8c7d7f9763266221513f4a845d7199f\",\"urls\":[\"bzz-raw://75cb5a4a445f4cd18d77dd7529fb471df39de0fa3ddc2313efd87304e8557a34\",\"dweb:/ipfs/QmVhvzvT5CjVQ7FY68gJm3k8ra4QRJJp2SyVEwJfXSxP4E\"]}},\"version\":1}",
-  "bytecode": "0x60806040526040518060400160405280601881526020017f4574685377617020496e7374616e742045786368616e676500000000000000008152506000908051906020019061004f9291906100dc565b50606460025534801561006157600080fd5b506040516104e03803806104e08339818101604052602081101561008457600080fd5b810190808051906020019092919050505080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610181565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061011d57805160ff191683800117855561014b565b8280016001018555821561014b579182015b8281111561014a57825182559160200191906001019061012f565b5b509050610158919061015c565b5090565b61017e91905b8082111561017a576000816000905550600101610162565b5090565b90565b610350806101906000396000f3fe60806040526004361061003f5760003560e01c806306fdde03146100445780632c4e722e146100d4578063d0febe4c146100ff578063fc0c546a14610109575b600080fd5b34801561005057600080fd5b50610059610160565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100e057600080fd5b506100e96101fe565b6040518082815260200191505060405180910390f35b610107610204565b005b34801561011557600080fd5b5061011e6102f5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101f65780601f106101cb576101008083540402835291602001916101f6565b820191906000526020600020905b8154815290600101906020018083116101d957829003601f168201915b505050505081565b60025481565b600060025434029050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102b657600080fd5b505af11580156102ca573d6000803e3d6000fd5b505050506040513d60208110156102e057600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820d6055ac99fe1488679d0a7f0404b88967a0a45ea826583f5ef2777274ab8b0c764736f6c63430005100032",
-  "deployedBytecode": "0x60806040526004361061003f5760003560e01c806306fdde03146100445780632c4e722e146100d4578063d0febe4c146100ff578063fc0c546a14610109575b600080fd5b34801561005057600080fd5b50610059610160565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100e057600080fd5b506100e96101fe565b6040518082815260200191505060405180910390f35b610107610204565b005b34801561011557600080fd5b5061011e6102f5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101f65780601f106101cb576101008083540402835291602001916101f6565b820191906000526020600020905b8154815290600101906020018083116101d957829003601f168201915b505050505081565b60025481565b600060025434029050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102b657600080fd5b505af11580156102ca573d6000803e3d6000fd5b505050506040513d60208110156102e057600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820d6055ac99fe1488679d0a7f0404b88967a0a45ea826583f5ef2777274ab8b0c764736f6c63430005100032",
-  "sourceMap": "52:379:0:-;;;74:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;171:3;149:25;;229:60;8:9:-1;5:2;;;30:1;27;20:12;5:2;229:60:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;229:60:0;;;;;;;;;;;;;;;;277:6;269:5;;:14;;;;;;;;;;;;;;;;;;229:60;52:379;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "52:379:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;74:47;;8:9:-1;5:2;;;30:1;27;20:12;5:2;74:47:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;74:47:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;149:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;149:25:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;295:133;;;:::i;:::-;;126:18;;8:9:-1;5:2;;;30:1;27;20:12;5:2;126:18:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;74:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;149:25::-;;;;:::o;295:133::-;338:19;372:4;;360:9;:16;338:38;;383:5;;;;;;;;;;;:14;;;398:10;410:11;383:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;383:39:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;383:39:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;383:39:0;;;;;;;;;;;;;;;;;295:133;:::o;126:18::-;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"./Token.sol\";\r\n\r\ncontract EthSwap {\r\n  string public name = \"EthSwap Instant Exchange\";\r\n  Token public token;\r\n  uint256 public rate = 100; // this means that 100 Truffle Tokens = 1 Ether\r\n\r\n  constructor(Token _token) public {\r\n    token = _token;\r\n  }\r\n\r\n  function buyTokens() public payable {\r\n    uint256 tokenAmount = msg.value * rate;\r\n    token.transfer(msg.sender, tokenAmount);\r\n  }\r\n}\r\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Token\",\"name\":\"_token\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract Token\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/diego/source/ethereum-dapp/src/contracts/EthSwap.sol\":\"EthSwap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/diego/source/ethereum-dapp/src/contracts/EthSwap.sol\":{\"keccak256\":\"0xbae9c8c4b6f8cfa6c97d1267090d891c8e54db2f62a088d4977a52ed810ea8ce\",\"urls\":[\"bzz-raw://4305d420f33b4be7656a83411a62d45f1c60c3d45cd471cff80ba88d9d4199dc\",\"dweb:/ipfs/QmQyTZDjj5AvNqVRChEDk5Hfkqq18yeBqg2KYoEvVDq8Qd\"]},\"/C/Users/diego/source/ethereum-dapp/src/contracts/Token.sol\":{\"keccak256\":\"0xc502e22d8e422affe3f01ca4178d2703a8c7d7f9763266221513f4a845d7199f\",\"urls\":[\"bzz-raw://75cb5a4a445f4cd18d77dd7529fb471df39de0fa3ddc2313efd87304e8557a34\",\"dweb:/ipfs/QmVhvzvT5CjVQ7FY68gJm3k8ra4QRJJp2SyVEwJfXSxP4E\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280601881526020017f4574685377617020496e7374616e742045786368616e676500000000000000008152506000908051906020019061004f9291906100dc565b50606460025534801561006157600080fd5b506040516104e03803806104e08339818101604052602081101561008457600080fd5b810190808051906020019092919050505080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610181565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061011d57805160ff191683800117855561014b565b8280016001018555821561014b579182015b8281111561014a57825182559160200191906001019061012f565b5b509050610158919061015c565b5090565b61017e91905b8082111561017a576000816000905550600101610162565b5090565b90565b610350806101906000396000f3fe60806040526004361061003f5760003560e01c806306fdde03146100445780632c4e722e146100d4578063d0febe4c146100ff578063fc0c546a14610109575b600080fd5b34801561005057600080fd5b50610059610160565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100e057600080fd5b506100e96101fe565b6040518082815260200191505060405180910390f35b610107610204565b005b34801561011557600080fd5b5061011e6102f5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101f65780601f106101cb576101008083540402835291602001916101f6565b820191906000526020600020905b8154815290600101906020018083116101d957829003601f168201915b505050505081565b60025481565b600060025434029050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102b657600080fd5b505af11580156102ca573d6000803e3d6000fd5b505050506040513d60208110156102e057600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158206c4296c4283d61bbf1435b147bc37e39499365a616028d7f3dc0a0d480440cdc64736f6c63430005100032",
+  "deployedBytecode": "0x60806040526004361061003f5760003560e01c806306fdde03146100445780632c4e722e146100d4578063d0febe4c146100ff578063fc0c546a14610109575b600080fd5b34801561005057600080fd5b50610059610160565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100e057600080fd5b506100e96101fe565b6040518082815260200191505060405180910390f35b610107610204565b005b34801561011557600080fd5b5061011e6102f5565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101f65780601f106101cb576101008083540402835291602001916101f6565b820191906000526020600020905b8154815290600101906020018083116101d957829003601f168201915b505050505081565b60025481565b600060025434029050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102b657600080fd5b505af11580156102ca573d6000803e3d6000fd5b505050506040513d60208110156102e057600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158206c4296c4283d61bbf1435b147bc37e39499365a616028d7f3dc0a0d480440cdc64736f6c63430005100032",
+  "sourceMap": "52:373:0:-;;;74:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;168:3;149:22;;226:60;8:9:-1;5:2;;;30:1;27;20:12;5:2;226:60:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;226:60:0;;;;;;;;;;;;;;;;274:6;266:5;;:14;;;;;;;;;;;;;;;;;;226:60;52:373;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "52:373:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;74:47;;8:9:-1;5:2;;;30:1;27;20:12;5:2;74:47:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;74:47:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;149:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;149:22:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;292:130;;;:::i;:::-;;126:18;;8:9:-1;5:2;;;30:1;27;20:12;5:2;126:18:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;74:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;149:22::-;;;;:::o;292:130::-;335:16;366:4;;354:9;:16;335:35;;377:5;;;;;;;;;;;:14;;;392:10;404:11;377:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;377:39:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;377:39:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;377:39:0;;;;;;;;;;;;;;;;;292:130;:::o;126:18::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"./Token.sol\";\r\n\r\ncontract EthSwap {\r\n  string public name = \"EthSwap Instant Exchange\";\r\n  Token public token;\r\n  uint public rate = 100; // this means that 100 Truffle Tokens = 1 Ether\r\n\r\n  constructor(Token _token) public {\r\n    token = _token;\r\n  }\r\n\r\n  function buyTokens() public payable {\r\n    uint tokenAmount = msg.value * rate;\r\n    token.transfer(msg.sender, tokenAmount);\r\n  }\r\n}\r\n",
   "sourcePath": "C:/Users/diego/source/ethereum-dapp/src/contracts/EthSwap.sol",
   "ast": {
     "absolutePath": "/C/Users/diego/source/ethereum-dapp/src/contracts/EthSwap.sol",
@@ -197,7 +197,7 @@
             "name": "rate",
             "nodeType": "VariableDeclaration",
             "scope": 40,
-            "src": "149:25:0",
+            "src": "149:22:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -206,9 +206,9 @@
             },
             "typeName": {
               "id": 8,
-              "name": "uint256",
+              "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "149:7:0",
+              "src": "149:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -224,7 +224,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "171:3:0",
+              "src": "168:3:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_100_by_1",
@@ -238,7 +238,7 @@
             "body": {
               "id": 19,
               "nodeType": "Block",
-              "src": "262:27:0",
+              "src": "259:27:0",
               "statements": [
                 {
                   "expression": {
@@ -255,7 +255,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 7,
-                      "src": "269:5:0",
+                      "src": "266:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_Token_$278",
                         "typeString": "contract Token"
@@ -270,13 +270,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 12,
-                      "src": "277:6:0",
+                      "src": "274:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_Token_$278",
                         "typeString": "contract Token"
                       }
                     },
-                    "src": "269:14:0",
+                    "src": "266:14:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_Token_$278",
                       "typeString": "contract Token"
@@ -284,7 +284,7 @@
                   },
                   "id": 18,
                   "nodeType": "ExpressionStatement",
-                  "src": "269:14:0"
+                  "src": "266:14:0"
                 }
               ]
             },
@@ -305,7 +305,7 @@
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
                   "scope": 20,
-                  "src": "241:12:0",
+                  "src": "238:12:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -318,7 +318,7 @@
                     "name": "Token",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 278,
-                    "src": "241:5:0",
+                    "src": "238:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_Token_$278",
                       "typeString": "contract Token"
@@ -328,16 +328,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "240:14:0"
+              "src": "237:14:0"
             },
             "returnParameters": {
               "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "262:0:0"
+              "src": "259:0:0"
             },
             "scope": 40,
-            "src": "229:60:0",
+            "src": "226:60:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -346,7 +346,7 @@
             "body": {
               "id": 38,
               "nodeType": "Block",
-              "src": "331:97:0",
+              "src": "328:94:0",
               "statements": [
                 {
                   "assignments": [
@@ -359,7 +359,7 @@
                       "name": "tokenAmount",
                       "nodeType": "VariableDeclaration",
                       "scope": 38,
-                      "src": "338:19:0",
+                      "src": "335:16:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -368,9 +368,9 @@
                       },
                       "typeName": {
                         "id": 23,
-                        "name": "uint256",
+                        "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "338:7:0",
+                        "src": "335:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -401,7 +401,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 293,
-                        "src": "360:3:0",
+                        "src": "354:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -415,7 +415,7 @@
                       "memberName": "value",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "360:9:0",
+                      "src": "354:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -430,20 +430,20 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 10,
-                      "src": "372:4:0",
+                      "src": "366:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "360:16:0",
+                    "src": "354:16:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "338:38:0"
+                  "src": "335:35:0"
                 },
                 {
                   "expression": {
@@ -458,7 +458,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 293,
-                          "src": "398:3:0",
+                          "src": "392:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -472,7 +472,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "398:10:0",
+                        "src": "392:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -485,7 +485,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 24,
-                        "src": "410:11:0",
+                        "src": "404:11:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -510,7 +510,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 7,
-                        "src": "383:5:0",
+                        "src": "377:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Token_$278",
                           "typeString": "contract Token"
@@ -524,7 +524,7 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 189,
-                      "src": "383:14:0",
+                      "src": "377:14:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (address,uint256) external returns (bool)"
@@ -538,7 +538,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "383:39:0",
+                    "src": "377:39:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -546,7 +546,7 @@
                   },
                   "id": 37,
                   "nodeType": "ExpressionStatement",
-                  "src": "383:39:0"
+                  "src": "377:39:0"
                 }
               ]
             },
@@ -561,26 +561,26 @@
               "id": 21,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "313:2:0"
+              "src": "310:2:0"
             },
             "returnParameters": {
               "id": 22,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "331:0:0"
+              "src": "328:0:0"
             },
             "scope": 40,
-            "src": "295:133:0",
+            "src": "292:130:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 41,
-        "src": "52:379:0"
+        "src": "52:373:0"
       }
     ],
-    "src": "0:433:0"
+    "src": "0:427:0"
   },
   "legacyAST": {
     "attributes": {
@@ -721,12 +721,12 @@
             "children": [
               {
                 "attributes": {
-                  "name": "uint256",
+                  "name": "uint",
                   "type": "uint256"
                 },
                 "id": 8,
                 "name": "ElementaryTypeName",
-                "src": "149:7:0"
+                "src": "149:4:0"
               },
               {
                 "attributes": {
@@ -743,12 +743,12 @@
                 },
                 "id": 9,
                 "name": "Literal",
-                "src": "171:3:0"
+                "src": "168:3:0"
               }
             ],
             "id": 10,
             "name": "VariableDeclaration",
-            "src": "149:25:0"
+            "src": "149:22:0"
           },
           {
             "attributes": {
@@ -789,17 +789,17 @@
                         },
                         "id": 11,
                         "name": "UserDefinedTypeName",
-                        "src": "241:5:0"
+                        "src": "238:5:0"
                       }
                     ],
                     "id": 12,
                     "name": "VariableDeclaration",
-                    "src": "241:12:0"
+                    "src": "238:12:0"
                   }
                 ],
                 "id": 13,
                 "name": "ParameterList",
-                "src": "240:14:0"
+                "src": "237:14:0"
               },
               {
                 "attributes": {
@@ -810,7 +810,7 @@
                 "children": [],
                 "id": 14,
                 "name": "ParameterList",
-                "src": "262:0:0"
+                "src": "259:0:0"
               },
               {
                 "children": [
@@ -839,7 +839,7 @@
                             },
                             "id": 15,
                             "name": "Identifier",
-                            "src": "269:5:0"
+                            "src": "266:5:0"
                           },
                           {
                             "attributes": {
@@ -853,27 +853,27 @@
                             },
                             "id": 16,
                             "name": "Identifier",
-                            "src": "277:6:0"
+                            "src": "274:6:0"
                           }
                         ],
                         "id": 17,
                         "name": "Assignment",
-                        "src": "269:14:0"
+                        "src": "266:14:0"
                       }
                     ],
                     "id": 18,
                     "name": "ExpressionStatement",
-                    "src": "269:14:0"
+                    "src": "266:14:0"
                   }
                 ],
                 "id": 19,
                 "name": "Block",
-                "src": "262:27:0"
+                "src": "259:27:0"
               }
             ],
             "id": 20,
             "name": "FunctionDefinition",
-            "src": "229:60:0"
+            "src": "226:60:0"
           },
           {
             "attributes": {
@@ -900,7 +900,7 @@
                 "children": [],
                 "id": 21,
                 "name": "ParameterList",
-                "src": "313:2:0"
+                "src": "310:2:0"
               },
               {
                 "attributes": {
@@ -911,7 +911,7 @@
                 "children": [],
                 "id": 22,
                 "name": "ParameterList",
-                "src": "331:0:0"
+                "src": "328:0:0"
               },
               {
                 "children": [
@@ -936,17 +936,17 @@
                         "children": [
                           {
                             "attributes": {
-                              "name": "uint256",
+                              "name": "uint",
                               "type": "uint256"
                             },
                             "id": 23,
                             "name": "ElementaryTypeName",
-                            "src": "338:7:0"
+                            "src": "335:4:0"
                           }
                         ],
                         "id": 24,
                         "name": "VariableDeclaration",
-                        "src": "338:19:0"
+                        "src": "335:16:0"
                       },
                       {
                         "attributes": {
@@ -987,12 +987,12 @@
                                 },
                                 "id": 25,
                                 "name": "Identifier",
-                                "src": "360:3:0"
+                                "src": "354:3:0"
                               }
                             ],
                             "id": 26,
                             "name": "MemberAccess",
-                            "src": "360:9:0"
+                            "src": "354:9:0"
                           },
                           {
                             "attributes": {
@@ -1006,17 +1006,17 @@
                             },
                             "id": 27,
                             "name": "Identifier",
-                            "src": "372:4:0"
+                            "src": "366:4:0"
                           }
                         ],
                         "id": 28,
                         "name": "BinaryOperation",
-                        "src": "360:16:0"
+                        "src": "354:16:0"
                       }
                     ],
                     "id": 29,
                     "name": "VariableDeclarationStatement",
-                    "src": "338:38:0"
+                    "src": "335:35:0"
                   },
                   {
                     "children": [
@@ -1068,12 +1068,12 @@
                                 },
                                 "id": 30,
                                 "name": "Identifier",
-                                "src": "383:5:0"
+                                "src": "377:5:0"
                               }
                             ],
                             "id": 32,
                             "name": "MemberAccess",
-                            "src": "383:14:0"
+                            "src": "377:14:0"
                           },
                           {
                             "attributes": {
@@ -1099,12 +1099,12 @@
                                 },
                                 "id": 33,
                                 "name": "Identifier",
-                                "src": "398:3:0"
+                                "src": "392:3:0"
                               }
                             ],
                             "id": 34,
                             "name": "MemberAccess",
-                            "src": "398:10:0"
+                            "src": "392:10:0"
                           },
                           {
                             "attributes": {
@@ -1118,37 +1118,37 @@
                             },
                             "id": 35,
                             "name": "Identifier",
-                            "src": "410:11:0"
+                            "src": "404:11:0"
                           }
                         ],
                         "id": 36,
                         "name": "FunctionCall",
-                        "src": "383:39:0"
+                        "src": "377:39:0"
                       }
                     ],
                     "id": 37,
                     "name": "ExpressionStatement",
-                    "src": "383:39:0"
+                    "src": "377:39:0"
                   }
                 ],
                 "id": 38,
                 "name": "Block",
-                "src": "331:97:0"
+                "src": "328:94:0"
               }
             ],
             "id": 39,
             "name": "FunctionDefinition",
-            "src": "295:133:0"
+            "src": "292:130:0"
           }
         ],
         "id": 40,
         "name": "ContractDefinition",
-        "src": "52:379:0"
+        "src": "52:373:0"
       }
     ],
     "id": 41,
     "name": "SourceUnit",
-    "src": "0:433:0"
+    "src": "0:427:0"
   },
   "compiler": {
     "name": "solc",
@@ -1158,12 +1158,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5DDd68BA3b4D11cd7E3dD0dEE62E0969E1479cfB",
-      "transactionHash": "0xab0b5bbdd871c280c40ab40ac7c949a82df8cd562227e4e23feae80aa3f5187f"
+      "address": "0x1afE3410E36CF795364AE9e9539ceA4b0b3466dd",
+      "transactionHash": "0xcfca7c30ffa704e131c2f8bca25ae1245f09b6f02181c5dd064a81aa4605124b"
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-06T01:19:00.060Z",
+  "updatedAt": "2021-01-06T11:04:07.016Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
