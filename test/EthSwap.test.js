@@ -38,7 +38,7 @@ contract('EthSwap', ([deployer, investor]) => {
     });
 
     it('should allow user to purchase Truffle Tokens from EthSwap for a fixed price', async () => {
-      await ethSwap.buyTokens({ from: investor, value: tokens('1') });
+      await ethSwap.buyTokens({ from: investor, value: web3.utils.toWei('1', 'ether') });
     });
   });
 });
