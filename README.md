@@ -9,6 +9,7 @@
 
 ## Useful commands for the commandline
 
-* ``truffle migrate``: executes the migrations
-* ``truffle migrate --reset``: blockchain is imutable, so, it always needs to be reseted
-* ``truffle console``: opens the truffle console to access data inside the blocks and smart contracts
+* ``truffle migrate``: executes the migrations;
+* ``truffle migrate --reset``: blockchain is imutable, so, it always needs to be reseted;
+* ``truffle console``: opens the truffle console to access data inside the blocks and smart contracts;
+* ``truffle test``: runs all tests in the test folder;

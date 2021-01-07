@@ -9,16 +9,17 @@ function tokens(num) {
   return web3.utils.toWei(num, 'ether');
 }
 
-let token;
-let ethSwap;
-
-beforeEach(async () => {
-  token = await Token.new();
-  ethSwap = await EthSwap.new(token.address);
-  await token.transfer(ethSwap.address, tokens('1000000'));
-});
-
 contract('EthSwap', ([deployer, investor]) => {
+  let token;
+  let ethSwap;
+  let result;
+
+  before(async () => {
+    token = await Token.new();
+    ethSwap = await EthSwap.new(token.address);
+    await token.transfer(ethSwap.address, tokens('1000000'));
+  });
+
   describe('Deploys', async () => {
     it('Truffle Token should have the right name', async () => {
       const tokenName = await token.name();
@@ -38,7 +39,15 @@ contract('EthSwap', ([deployer, investor]) => {
     });
 
     it('should allow user to purchase Truffle Tokens from EthSwap for a fixed price', async () => {
-      await ethSwap.buyTokens({ from: investor, value: '1000000000000000000' });
+      result = await ethSwap.buyTokens({ from: investor, value: tokens('1') });
+      const investorBalance = await token.balanceOf(investor)
+      assert.equal(investorBalance.toString(), tokens('100'));
+
+      const ethSwapBalance = await token.balanceOf(ethSwap.address);
+      assert.equal(ethSwapBalance.toString(), tokens('999900'));
+
+      const ethSwapNewBalance = await web3.eth.getBalance(ethSwap.address);
+      assert.equal(ethSwapNewBalance.toString(), tokens('1'));
     });
   });
 });
