@@ -32,7 +32,7 @@ contract('EthSwap', ([deployer, investor]) => {
     });
   });
 
-  describe('Truffle Tokens exchanges', async () => {
+  describe('Truffle Buy Tokens', async () => {
     it('should have tokens in it after the transfer', async () => {
       const balance = await token.balanceOf(ethSwap.address);
       assert.equal(balance.toString(), tokens('1000000'));
@@ -48,6 +48,30 @@ contract('EthSwap', ([deployer, investor]) => {
 
       const ethSwapNewBalance = await web3.eth.getBalance(ethSwap.address);
       assert.equal(ethSwapNewBalance.toString(), tokens('1'));
+
+      const event = result.logs[0].args;
+      assert.equal(event.account, investor);
+      assert.equal(event.token, token.address);
+      assert.equal(event.amount.toString(), tokens('100').toString());
+      assert.equal(event.rate.toString(), '100');
+    });
+  });
+
+  describe('Truffle Sell Tokens', async () => {
+    before(async () => {
+      await token.approve(ethSwap.address, tokens('100'), {from: investor});
+      result = await ethSwap.sellTokens(tokens('100'), {from: investor});
+    });
+
+    it('should allow user to sell Truffle Tokens from EthSwap for a fixed price', async () => {
+      const investorBalance = await token.balanceOf(investor);
+      assert.equal(investorBalance.toString(), tokens('0'));
+
+      const ethSwapBalance = await token.balanceOf(ethSwap.address);
+      assert.equal(ethSwapBalance.toString(), tokens('1000000'));
+
+      const ethSwapNewBalance = await web3.eth.getBalance(ethSwap.address);
+      assert.equal(ethSwapNewBalance.toString(), tokens('0'));
 
       const event = result.logs[0].args;
       assert.equal(event.account, investor);
