@@ -34,6 +34,8 @@ contract EthSwap {
 
     function sellTokens(uint256 _amount) public {
 			uint256 etherAmount = _amount / 100;
+      require(token.balanceOf(msg.sender) >= _amount);
+
       require(token.balanceOf(address(this)) >= etherAmount);
 
 			token.transferFrom(msg.sender, address(this), _amount);
